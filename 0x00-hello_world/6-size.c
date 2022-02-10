@@ -11,10 +11,9 @@ char a;
 
 int main(void)
 {
-	printf(sizeof(char));
-	printf(sizeof(int));
-	printf(sizeof(float));
-	printf(sizeof(double));
-	printf(sizeof(void));
-	printf(sizeof(long));
+	printf("Size of a char: %d byte(s) \n",sizeof(char));
+	printf("Size of an int: %d byte(s)",sizeof(int));
+	printf("Size of a long int: %d byte(s) ",sizeof(long int));
+	printf("Size of a long long int: %d byte(s)",sizeof(long long int));
+	printf("Size of a float: %d byte(s)",sizeof(float));
 }
