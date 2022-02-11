@@ -1,15 +1,9 @@
-/**
-* File: 0-positive_or_negative.c
-* Auth: Edwin Gaviria Cardenas
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 /**
-* main - Prints a random number and states whether
-*        it is positive, negative, or zero.
+* main - Determine if a random number is positive, negative or zero.
 *
 * Return: Always 0.
 */
