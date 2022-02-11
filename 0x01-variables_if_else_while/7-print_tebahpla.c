@@ -13,7 +13,7 @@ int main(void)
 	char ch;
 
 	for (ch = 'z' ; ch <= 'a' ; ch--)
-		putchar(ch);
+		printf(ch);
 	printf("\n");
   return (0);
 }
