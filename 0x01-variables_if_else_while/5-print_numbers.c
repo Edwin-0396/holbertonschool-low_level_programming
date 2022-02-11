@@ -14,6 +14,6 @@ int main(void)
 
 	for (n = 0 ; n < 10 ; n++)
 	{
-		cout(n);
+		printf("%d",n);
 	}
 }
