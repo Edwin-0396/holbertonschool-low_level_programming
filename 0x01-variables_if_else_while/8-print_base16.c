@@ -12,7 +12,7 @@ int main(void)
 {
 	char ch;
 
-	for (ch = '48' ; ch <= '64' ; ch++)
+	for (ch = 48 ; ch <= 64 ; ch++)
 		putchar(ch);
 	printf("\n");
   return (0);
