@@ -8,13 +8,14 @@
 void times_table(void)
 {
 	int n = 0;
+	int m;
 	int times_table;
 
 	while (n < 10)
 	{
 		_putchar('0');
 		_putchar(',');
-		int m = 1;
+		m = 1;
 
 		while (m < 10)
 		{
