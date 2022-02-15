@@ -11,16 +11,13 @@
 int _islower(int c)
 {
 	char ch = 'a';
+	
 	while(ch <= 'z')	
 	{
 		if (c == ch)
-		{
-			return (1);
-			break;		
-		}else
-		{
+			return (1);		
+		else
 			return (0);
-		}
 		ch++;
 	}
 }
