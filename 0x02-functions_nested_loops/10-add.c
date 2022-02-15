@@ -3,10 +3,11 @@
 /**
 * add - function that adds two integers and returns the result.
 *
-* Return: the add between the inputs.
+* @x: first parameter to add
+* @y: second parameter to add
 */
 
 int add(int x, int y)
 {
-	return x+y;
+	return (x + y);
 }
