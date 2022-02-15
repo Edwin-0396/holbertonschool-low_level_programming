@@ -12,14 +12,9 @@ int _isalpha(int c)
 	while (ch <= 'z')
 	{
 		if (c==ch)
-		{
 			return (1);
-			break;
-		}else
-		{
-			return (0);
-		}	
 	}
+	return (0);
 }
 
 
