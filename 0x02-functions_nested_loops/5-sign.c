@@ -2,8 +2,8 @@
 
 /**
 * print_sign - function that prints the sign of a number.
-*
-* Return: Always 0.
+*	@n: input number to calculate its sign.
+* Return: 0 if 0; +1 if +; -1 if -.
 */
 
 int print_sign(int n)
