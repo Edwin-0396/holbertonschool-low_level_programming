@@ -1,11 +1,11 @@
-#include <main.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
-* main -  function that prints all natural numbers from n to 98, followed by a 
-* new line.
+* print_to_98 -  function that prints all natural numbers from n to 98, 
+*	followed by a new line.
 *
-* Return: Always 0.
+* @n: input to do print the numbers until.
 */
 
 void print_to_98(int n)
