@@ -1,14 +1,11 @@
 #include "main.h"
 /**
- * print_numbers - print numbers 1 to 9
- *
- * Return: Always 0
+ * mul - function that prints the numbers, from 0 to 9, followed by a new line.
+ * @a: the int for the paramaters of my function
+ * @b: the int for the paramaters of my function
+ * Return: 0
  */
-void print_numbers(void)
+int mul(int a, int b)
 {
-	char a;
-
-	for (a = '0'; a <= '9'; a++)
-		_putchar(a);
-	_putchar('\n');
+	return (a * b);
 }
