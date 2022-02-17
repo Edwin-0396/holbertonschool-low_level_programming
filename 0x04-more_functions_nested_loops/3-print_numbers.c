@@ -1,11 +1,16 @@
 #include "main.h"
+
 /**
- * mul - function that prints the numbers, from 0 to 9, followed by a new line.
- * @a: the int for the paramaters of my function
- * @b: the int for the paramaters of my function
- * Return: 0
+ * print_numbers - function that prints the numbers, from 0 to 9,
+ * followed by a new line.
+ * Return: Always 0.
  */
-int mul(int a, int b)
+
+void print_numbers(void)
 {
-	return (a * b);
+int n;
+
+for (n = 48 ; n <= 57 ; n++)
+_putchar(n);
+_putchar('\n');
 }
