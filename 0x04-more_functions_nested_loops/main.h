@@ -1,12 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
-<<<<<<< HEAD
+
 #include <stdio.h>
-
-int _isupper(int c);
-
-#endif /* MAIN_H */
-=======
 
 int _putchar(char c);
 int _isupper(int c);
@@ -20,4 +15,3 @@ void print_diagonal(int n);
 void print_square(int size);
 
 #endif
->>>>>>> 6a705421aaa845b99eb08d93d7b39a53e8752eb8
