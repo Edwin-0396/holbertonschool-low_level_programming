@@ -6,22 +6,22 @@
  * @src: input parameter
  * Return: pointer to the resulting string dest.
  */
-
+  
 char *_strcat(char *dest, char *src)
 {
-	char *s = dest;
+	int i, j = 0;
 
-	while (*dest != '\0')
+	while (dest[i] != '\0')
 	{
-		dest++;
+		i++;
 	}
 
-	while (*src != '\0')
+	while (src[j] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	*dest = '\0';
-	return (s);
+	dest[i]='\0';
+	return (dest);
 }
