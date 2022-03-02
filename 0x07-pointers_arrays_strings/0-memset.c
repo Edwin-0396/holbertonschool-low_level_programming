@@ -12,7 +12,6 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
-	char *str = s;
 
 	if (!s)
 		return ("error /n");
@@ -22,5 +21,5 @@ char *_memset(char *s, char b, unsigned int n)
 		*s++ = b;
 		i++;
 	}
-	return (str);
+	return (s);
 }
