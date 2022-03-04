@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - returns the name of the function
+ * main - returns number of commands
  * @argc: number of inputs on the command line
  * @argv: array with the elements of the command line
  *
