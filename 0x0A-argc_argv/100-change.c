@@ -10,10 +10,27 @@
  * Return: 0.
  */
 
-int main(__attribute__((unused)) int argc, char *argv[])
+int main( int argc, char *argv[])
 {
+	int i = 0;
+	int result;
+	int count = 0;
+	int coins[5] = {25, 10, 5, 2, 1};	
+	
+	if (argc < 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-	int i = 0, result = atoi(argv[1]), count = 0, coins[5] = {25, 10, 5, 2, 1};
+	result = atoi(argv[1]);
+
+
+	if (atoi(argv[1]) < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 
 	while (i < 5)
 	{
