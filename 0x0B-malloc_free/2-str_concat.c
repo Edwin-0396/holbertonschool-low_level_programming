@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	size_1 = _strlen(s1);
 	size_2 = _strlen(s2);
 
-	array = malloc(size_1 * sizeof(*s1) + size_1 * sizeof(*s2) + 1);
+	array = malloc(size_1 * sizeof(*s1) + size_2 * sizeof(*s2) );
 
 	while (i < size_1 + size_2)
 	{
