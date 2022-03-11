@@ -5,7 +5,7 @@
  *
  * @ptr: size of each element
  * @old_size: number of members
- * @new_size: 
+ * @new_size:
  * Return: void.
  */
 
@@ -32,7 +32,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	s = malloc(new_size);
 	if (!s)
-		return(NULL);
+		return (NULL);
 
 	if (new_size > old_size)
 		new_size = old_size;
