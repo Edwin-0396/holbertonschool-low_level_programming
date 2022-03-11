@@ -3,9 +3,9 @@
 /**
  * _realloc - function that creates an array of integers.
  *
- * @ptr: size of each element
- * @old_size: number of members
- * @new_size:
+ * @ptr: old array
+ * @old_size: size of old array
+ * @new_size: size for new array
  * Return: void.
  */
 
