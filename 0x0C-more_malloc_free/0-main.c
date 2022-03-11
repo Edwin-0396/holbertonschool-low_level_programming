@@ -14,6 +14,7 @@ int main(void)
     int *i;
     float *f;
     double *d;
+    char *e;
 
     c = malloc_checked(sizeof(char) * 1024);
     printf("%p\n", (void *)c);
@@ -27,6 +28,5 @@ int main(void)
     free(i);
     free(f);
     free(d);
-	printf("%p\n",(void *)f);
     return (0);
 }
