@@ -3,8 +3,8 @@
 #include "dog.h"
 
 /**
- * free_dog - 
- * @d: 
+ * free_dog - Function that frees dogs.
+ * @d: pointer to the struct
  *
  * Return: Always 0.
  */
