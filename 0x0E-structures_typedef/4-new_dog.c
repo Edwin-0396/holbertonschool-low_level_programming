@@ -3,7 +3,10 @@
 #include "dog.h"
 
 /**
- * main - check the code
+ * new_dog - new type for struct_dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
  * Return: Always 0.
  */
