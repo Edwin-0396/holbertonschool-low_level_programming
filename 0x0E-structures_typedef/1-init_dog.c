@@ -5,7 +5,7 @@
 /**
  * init_dog - check the code
  * @d: instance for data structure
- * @name: name of the dog 
+ * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
  *
