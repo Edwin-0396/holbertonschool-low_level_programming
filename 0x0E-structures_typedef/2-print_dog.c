@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * init_dog - check the code
+ * print_dog - pritn the elements of the struct
  * @d: instance for data structure
  *
  * Return: void.
