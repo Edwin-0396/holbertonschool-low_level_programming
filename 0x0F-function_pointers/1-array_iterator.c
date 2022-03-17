@@ -5,6 +5,10 @@
  * executes a function given as a
  * parameter on each element of an array.
  *
+ * @array: array to run
+ * @size: size of the array
+ * @action: to execute the function to a pointer
+ *
  * Return: void.
  */
 
