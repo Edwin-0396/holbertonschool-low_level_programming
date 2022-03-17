@@ -1,14 +1,14 @@
 #include "3-calc.h"
 
 /**
-* main - main function
-* @argc: number of argumernts
-* @argv: argument
-*
-* Return: 0
-*/
+ * main - main function
+ * @argc: number of argumernts
+ * @argv: argument
+ *
+ * Return: 0
+ */
 
-int main (int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 4)
 		printf("ERROR"), exit(98);
