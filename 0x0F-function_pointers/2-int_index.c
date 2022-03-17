@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_name - Function that prints a name.
+ * int_index - Function that prints a name.
+ * @array: array to run
+ * @size: size of array
+ * @cmp: funtion to pointer
  *
  * Return: void.
  */
