@@ -14,6 +14,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list numbers;
 
+	if (!separator)
+		separator = "";
+
 	va_start(numbers, n); /* Initialize the argument list. */
 
 	for (i = 0; i < n; i++)

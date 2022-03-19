@@ -2,7 +2,19 @@
 #define _FILE_H
 
 #include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
+
+/**
+ * struct print_all - prints anything
+ * @all: arguments
+ * @func: pointer to the functions that prints all
+ */
+typedef struct print_all
+{
+	char all;
+	void (*func)(va_list arguments);
+} simbol_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
