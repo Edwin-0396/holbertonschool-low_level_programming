@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * add_node_end - check the code
+ *@head: head node
+ *@str: string of the node
  * Return: Always 0.
  */
 
@@ -12,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new, *last;
 	unsigned int len = 0;
 
-	while(str[len])
+	while (str[len])
 		len++;
 
 	new = (list_t *)malloc(sizeof(list_t));
