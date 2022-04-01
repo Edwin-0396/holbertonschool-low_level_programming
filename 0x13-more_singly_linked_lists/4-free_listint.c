@@ -1,7 +1,13 @@
 #include "lists.h"
 
 /**
- * main - check the code
- * 
- * Return: Always 0.
+ * free_listint - frees a listint_t list.
+ * @head: Head node
  */
+
+void free_listint(listint_t *head)
+{
+	if (head && head->next)
+		free_listint(head->next);
+	free(head);
+}
