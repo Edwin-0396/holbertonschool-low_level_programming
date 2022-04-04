@@ -2,7 +2,7 @@
 
 /**
  * print_binary - check the code
- * @n: 
+ * @n: dec number
  *
  * Return: Always 0.
  */
