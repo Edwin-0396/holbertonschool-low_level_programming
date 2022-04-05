@@ -11,10 +11,10 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd = 0;
-	size_t counter = 0;
+	size_t i = 0;
 	ssize_t write_out = 0;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
 	if (text_content == NULL)
@@ -28,10 +28,11 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
-	while (text_content[counter])
-		counter++;
 
-	write_out = write(fd, text_content, counter);
+	while (text_content[i])
+		i++;
+
+	write_out = write(fd, text_content, i);
 	if (write_out == -1)
 	{
 		close(fd);
