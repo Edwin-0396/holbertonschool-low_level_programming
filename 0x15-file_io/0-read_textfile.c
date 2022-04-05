@@ -22,8 +22,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buf = malloc(letters);
 	if (!buf)
 		return (0);
-
-	/* open*/
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
@@ -31,8 +29,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	
-	/*read*/
 	read_out = read(fd, buf, letters);
 	if (read_out == -1)
 	{
@@ -40,8 +36,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-
-	/*write*/
 	write_out = write(STDOUT_FILENO, buf, read_out);
 	if (write_out == -1)
 	{
@@ -49,7 +43,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-
 	free(buf);
 	close(fd);
 	return (write_out);
