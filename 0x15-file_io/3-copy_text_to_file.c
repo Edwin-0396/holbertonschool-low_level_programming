@@ -15,8 +15,6 @@ int copy_text_to_file(const char *file_from, char *file_to)
 	ssize_t write_out, read_out = 1;
 	char *buf;
 
-	if (!file_from || !file_to)
-		return (-1);
 	fd1 = open(file_from, O_RDONLY);
 	if (fd1 == -1)
 		return (-1);
