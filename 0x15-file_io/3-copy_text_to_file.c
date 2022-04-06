@@ -11,16 +11,16 @@
 
 int copy_text_to_file(const char *file_from, char *file_to)
 {
-	int fd1, fd2, aux;
-	ssize_t write_out, read_out = 1;
+	int fd1, fd2, aux, write_out, read_out;
 	char *buf;
 
+	read_out = 1;
 	fd1 = open(file_from, O_RDONLY);
 	if (fd1 == -1)
 		return (-1);
 	fd2 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd2 == -1)
-		return (-1);
+		return (-2);
 	buf = (char *)malloc(sizeof(char) * 1024);
 	if (!buf)
 		return (-1);
