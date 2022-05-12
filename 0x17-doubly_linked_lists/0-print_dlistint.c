@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - prints all the elements of a dlistint_t list
- * @h: pointer to a struct of type dlistint_t
+ * @head: pointer to a struct of type dlistint_t
  * Return: number of nodes
  */
 
