@@ -1,28 +1,28 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * hash_table_create - function that creates a hash table
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: pointer to the address of the hash table
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *ht = NULL;
-    hash_node_t **array = NULL;
+	hash_table_t *ht = NULL;
+	hash_node_t **array = NULL;
 
-    ht = malloc(sizeof(hash_table_t));
+	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
 		return (NULL);
 
-    ht->size = size;
-    array = calloc(size, sizeof(hash_node_t *));
-    if(!array)
-    {
-        return (NULL);
-    }
+	ht->size = size;
+	array = calloc(size, sizeof(hash_node_t *));
+	if (!array)
+	{
+		return (NULL);
+	}
 
-    ht->array = array;
+	ht->array = array;
 
-    return (ht);
+	return (ht);
 }

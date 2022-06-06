@@ -1,16 +1,18 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * key_index - get the key index of a hash table
  *
- * Return: Always EXIT_SUCCESS.
+ * @key: key for the hash table
+ * @size: size of the hash table
+ *
+ * Return: key index from hash function
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-    if(size == 0 || key == NULL)
-        return (0);
+	if (size == 0 || key == NULL)
+		return (0);
 
-    return (hash_djb2(key) % size);
+	return (hash_djb2(key) % size);
 }
-
