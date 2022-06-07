@@ -4,40 +4,32 @@
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    hash_table_t *ht;
-    char *value;
+	hash_table_t *ht;
+	char *value;
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "c", "fun");
-    hash_table_set(ht, "python", "awesome");
-    hash_table_set(ht, "Bob", "and Kris love asm");
-    hash_table_set(ht, "N", "queens");
-    hash_table_set(ht, "Asterix", "Obelix");
-    hash_table_set(ht, "Betty", "Cool");
-    hash_table_set(ht, "98", "Battery Street");
-    hash_table_set(ht, "c", "isfun");
+	ht = hash_table_create(30);
+	hash_table_set(ht, "USA", "Washington");
+	hash_table_set(ht, "France", "Paris");
+	hash_table_set(ht, "UK", "London");
+	hash_table_set(ht, "Spain", "Madrid");
+	hash_table_set(ht, "Germany", "Berlin");
+	hash_table_set(ht, "China", "Beijing");
+	hash_table_set(ht, "Russia", "Moscow");
+	hash_table_set(ht, "Bahrain", "Manama");
+	hash_table_set(ht, "Canada", "Ottawa");
+	hash_table_set(ht, "Brazil", "Brasilia");
+	hash_table_set(ht, "Sweden", "Stockholm");
+	hash_table_set(ht, "Iceland", "Reykjavik");
+	hash_table_set(ht, "Japan", "Tokyo");
+	hash_table_set(ht, "Australia", "Canberra");
 
-    value = hash_table_get(ht, "python");
-    printf("%s:%s\n", "python", value);
-    value = hash_table_get(ht, "Bob");
-    printf("%s:%s\n", "Bob", value);
-    value = hash_table_get(ht, "N");
-    printf("%s:%s\n", "N", value);
-    value = hash_table_get(ht, "Asterix");
-    printf("%s:%s\n", "Asterix", value);
-    value = hash_table_get(ht, "Betty");
-    printf("%s:%s\n", "Betty", value);
-    value = hash_table_get(ht, "98");
-    printf("%s:%s\n", "98", value);
-    value = hash_table_get(ht, "c");
-    printf("%s:%s\n", "c", value);
-    value = hash_table_get(ht, "javascript");
-    printf("%s:%s\n", "javascript", value);
-    return (EXIT_SUCCESS);
+	value = hash_table_get(ht, "Canada");
+	printf("%s:%s\n", "Canada", value);
+	return (EXIT_SUCCESS);
 }
