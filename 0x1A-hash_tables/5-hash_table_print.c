@@ -12,22 +12,23 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
-	bool comma = TRUE;
+	int comma = 1;
 
 	if (!ht)
 		return;
 
 	printf("{");
-	for (i = 0; i < ht->size; i++)
+	for (i = 0; i <= ht->size; i++)
 	{
 		if (ht->array[i])
 		{
 			if (!comma)
 				printf(", ");
 			else
-				comma = FALSE;
+				comma = 0;
 			printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 		}
 	}
 	printf("}\n");
+	printf("%lu", ht->size);
 }
